@@ -1,15 +1,9 @@
-import React, { Component } from "react";
-import { browserHistory } from 'react-router';
+import React from 'react';
 
-export default class Home extends Component {
-  componentDidMount() {
-    browserHistory.push('/');
-  }
-  render() {
-    return (
-      <div id="home">
-        This is the home page.
-      </div>
-    );
-  }
-}
+const Home = () => (
+  <div id='home'>
+    This is the home page.
+  </div>
+);
+
+export default Home;

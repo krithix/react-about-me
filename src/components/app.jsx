@@ -1,11 +1,16 @@
-import React, { Component } from "react";
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import Header from './views/partials/header';
+import Routes from '../routes';
 
-export default class App extends Component {
-  render() {
-    return (
-      <div>
-        {this.props.children}
-      </div>
-    );
-  }
-}
+
+const App = () => (
+  <BrowserRouter>
+    <div>
+      <Header />
+      <Routes />
+    </div>
+  </BrowserRouter>
+);
+
+export default App;
