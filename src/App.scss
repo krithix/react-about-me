@@ -1,0 +1,30 @@
+$blue: #224AFB;
+
+html, body, ul {
+  background: blue;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+
+  div {
+    margin-top: 40px;
+  }
+
+  a {
+    color: white;
+
+    &.selected {
+      text-decoration: none;
+    }
+  }
+
+  .Home {
+    color: red;
+  }
+
+  .Contact {
+    color: white;
+  }
+}
